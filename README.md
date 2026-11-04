@@ -1,7 +1,7 @@
 # book-store
-The Biok Store 📚
+The Book Store 📚
 
-The Biok Store is a simple and elegant bookstore landing page designed for a bookstore located in Kabul, Afghanistan.
+The Book Store is a simple and elegant bookstore landing page designed for a bookstore located in Kabul, Afghanistan.
 
 Features
 
