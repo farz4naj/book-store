@@ -1,0 +1,382 @@
+<title>The Book Store</title>
+
+<!-- CSS Styles -->
+<style>
+
+    /* General Settings */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Georgia, serif;
+        background-color: #f8f3eb;
+        color: #3e2c23;
+    }
+
+    /* Navbar */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+        background-color: #4b3025;
+    }
+
+    /* Logo */
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #f8e8d0;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    /* Navigation Links */
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }
+
+    .nav-links a:hover {
+        color: #e6c28b;
+    }
+
+    /* Hero Section */
+    #home {
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    #home h1 {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    #home p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .hero-image {
+        width: 80%;
+        max-width: 700px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* About Section */
+    #about {
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    /* Services Section */
+    #services {
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .book {
+        display: inline-block;
+        margin: 20px;
+        padding: 15px;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .book img {
+        width: 200px;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    /* Testimonials */
+    #testimonials {
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    /* Contact */
+    #contact {
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        background-color: #4b3025;
+        color: white;
+        padding: 25px;
+    }
+    /* Book Gallery Section */
+#gallery {
+    padding: 50px 40px;
+    text-align: center;
+}
+
+#gallery h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+#gallery p {
+    margin-bottom: 30px;
+}
+
+/* Grid Parent */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    gap: 20px;
+}
+
+/* Gallery Items */
+.gallery-item {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gallery-item h3 {
+    margin-top: 10px;
+    color: #4b3025;
+}
+
+/* Special Grid Placement */
+.gallery-item:nth-child(1) {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.gallery-item:nth-child(2) {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+.gallery-item:nth-child(3) {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+}
+
+.gallery-item:nth-child(4) {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.gallery-item:nth-child(5) {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.gallery-item:nth-child(6) {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+}
+
+</style>
+<!-- Header and Navigation -->
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/2232/2232688.png"
+                 alt="Book Logo"
+                 width="45">
+            <span>The Book Store</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Our Books</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<main>
+
+    <!-- Hero Section -->
+    <section id="home">
+
+        <h1>Welcome to The Book Store</h1>
+
+        <h2>Every Book Opens a New World</h2>
+
+        <p>
+            Discover stories, knowledge, and inspiration
+            in every page.
+        </p>
+
+        <img class="hero-image"
+             src="https://images.unsplash.com/photo-1507842217343-583bb7270b66"
+             alt="Beautiful bookstore">
+
+    </section>
+    <h2>Our Book Gallery</h2>
+
+<p>Explore our beautiful collection of books.</p>
+
+<!-- Grid Parent: Contains all gallery items -->
+<div class="gallery-container">
+
+    <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f"
+             alt="Educational books">
+        <h3>Educational Books</h3>
+    </div>
+
+    <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794"
+             alt="Fiction books">
+        <h3>Fiction Books</h3>
+    </div>
+
+    <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc"
+             alt="Children's books">
+        <h3>Children's Books</h3>
+    </div>
+
+    <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8"
+             alt="Language books">
+        <h3>Language Books</h3>
+    </div>
+
+    <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353"
+             alt="Literature books">
+        <h3>Literature</h3>
+    </div>
+
+    <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d"
+             alt="Books collection">
+        <h3>Best Sellers</h3>
+    </div>
+
+</div>
+
+    <!-- About Section -->
+    <section id="about">
+
+        <h2>About Us</h2>
+
+        <p>
+            The Book Store is a special place for book lovers
+            in Kabul, Afghanistan. We believe books are the
+            keys to knowledge, creativity, and a better future.
+        </p>
+
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+
+        <h2>Explore Our Books</h2>
+
+        <div class="book">
+            <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f"
+                 alt="Educational books">
+            <h3>Educational Books</h3>
+            <p>Learn something new every day.</p>
+        </div>
+
+        <div class="book">
+            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794"
+                 alt="Fiction books">
+            <h3>Novels and Fiction</h3>
+            <p>Discover amazing stories.</p>
+        </div>
+        <div class="book">
+            <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc"
+                 alt="Children's books">
+            <h3>Children's Books</h3>
+            <p>Beautiful books for young readers.</p>
+        </div>
+
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+
+        <h2>What Our Customers Say</h2>
+
+        <blockquote>
+            "A wonderful bookstore with a great collection!"
+        </blockquote>
+        <p>- Ahmad</p>
+
+        <blockquote>
+            "I always find interesting books here."
+        </blockquote>
+        <p>- Sara</p>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>We would love to hear from you!</p>
+
+        <form action="#" method="post">
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <br><br>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <br><br>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <br><br>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+
+    <h2>The Book Store</h2>
+    <p>Your journey begins with a book.</p>
+    <p>Kabul, Afghanistan</p>
+    <p>&copy; 2026 The Biok Store. All Rights Reserved.</p>
+
+</footer>
